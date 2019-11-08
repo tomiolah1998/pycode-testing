@@ -38,7 +38,7 @@ http://localhost:8443
 
 JupyterLab will be running on:
 
-http://localhost:8888 with a token of `local-development`
+http://localhost:8888 with a token of `pycode`
 
 #### VSCode Extensions and Configuration
 
