@@ -1,3 +1,21 @@
+# TL;DR: HOW TO RUN
+
+1. Clone this repo
+2. `cd` into it
+3. `docker-compose up`
+4. Access on of the URLs in your browser:
+- `localhost:8443` - VSCode server
+- `localhost:8888` - Jupyter Console
+  - It needs a token, which is **`pycode`** by default
+5. If you want to add files to the container, just place them in the `code` subfolder on the host machine - itt will share this folder with the container (two-way sharing)
+
+
+
+------
+
+
+
+
 Example template that spins up a self-contained data science environment within a container, that includes:
 
 1. Conda for Python dependencies
@@ -45,4 +63,3 @@ http://localhost:8888 with a token of `pycode`
 You can install any extension and modify configuration like you would locally. Any extensions you install and global configuration you update will persist in the `./data` folder so you don't have to redo it every time you restart the container. By default VSCode will start up with the `./code` folder as the workspace, which you can change by modifying the `docker-entrypoint.sh` file.
 
 You can pretty much VSCode as you would locally, doing things like starting up terminals, setting Python formatters/linters, and so on.
-
